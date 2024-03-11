@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What animal is this ?"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="250dp"
+        android:layout_height="222dp"
+        android:src="@drawable/image_bird"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+        
+        <ProgressBar
+            android:id="@+id/progressBar_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="false"
+            android:progress="0"
+            android:max="20"
+            android:minHeight="50dp"/>
+
+        <TextView
+            android:id="@+id/progressBar_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/20"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_optionOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bird"
+        android:gravity="center"
+        android:background="@drawable/option_border"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_optionTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bird"
+        android:gravity="center"
+        android:background="@drawable/option_border"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_optionThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bird"
+        android:gravity="center"
+        android:background="@drawable/option_border"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_optionFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bird"
+        android:gravity="center"
+        android:background="@drawable/option_border"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submit_border"
+        android:text="submit"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
